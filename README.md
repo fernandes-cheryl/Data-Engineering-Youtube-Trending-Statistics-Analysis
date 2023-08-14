@@ -10,10 +10,10 @@ The pipeline will retrieve data from the dataset, transform it to a proper forma
 3. A company can mould ads based on categories liked in certain regions.
 
 ## Questions Asked
-Regions in analysis(CA, US, GB):
-Which categories perform well and their statistics
-Based on which factors are the categories performing well or not
-Which channels are the most liked in the respective regions
+* Regions in analysis(CA, US, GB):
+* Which categories perform well and their statistics
+* Based on which factors are the categories performing well or not
+* Which channels are the most liked in the respective regions
 
 
 ## Youtube Dataset 
@@ -50,21 +50,21 @@ Amazon QuickSight is a cloud-scale business intelligence (BI) service that you c
 
 
 ## Process/ Steps Followed
-Load data from local systems to S3 bucket.
-Build a crawler on json files and give required roles. This results in table created in Athena.
-Give output location(S3) in Athena and run required queries.
-Error encountered since json files are not in SerDe format and hence need to be converted to parqet format.
-AWS Lambda is used to convert json files to parquet while also giving S3 role to store resultant files (At first only one json file is tested).
-Create Lambda layer for additional packages like awswrangler. Also create a glue role.
-Check if json file is converted to parquet in S3 (This will be the cleaned version of the raw file).
+* Load data from local systems to S3 bucket.
+* Build a crawler on json files and give required roles. This results in table created in Athena.
+* Give output location(S3) in Athena and run required queries.
+* Error encountered since json files are not in SerDe format and hence need to be converted to parqet format.
+* AWS Lambda is used to convert json files to parquet while also giving S3 role to store resultant files (At first only one json file is tested).
+* Create Lambda layer for additional packages like awswrangler. Also create a glue role.
+* Check if json file is converted to parquet in S3 (This will be the cleaned version of the raw file).
 
-Next, build a crawler on CSV files, the resultant of which is a table created in Athena.
-Cleaned json file can be joined with raw CSV file table.
-CSV file is converted to parquet by creating a job to do the same(cleaned version of csv files).
+* Next, build a crawler on CSV files, the resultant of which is a table created in Athena.
+* Cleaned json file can be joined with raw CSV file table.
+* CSV file is converted to parquet by creating a job to do the same(cleaned version of csv files).
 
-Create a trigger that is invoked whenever new json files are added.
-Create a job for joining the cleaned json and csv tables.
-Store the resultant data in an S3 bucket that can be further used for analysis.
+* Create a trigger that is invoked whenever new json files are added.
+* Create a job for joining the cleaned json and csv tables.
+* Store the resultant data in an S3 bucket that can be further used for analysis.
 
 
 ## Dashboard using QuickSight
