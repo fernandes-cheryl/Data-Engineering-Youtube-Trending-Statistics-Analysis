@@ -26,22 +26,22 @@ Each region’s data is in separate json files segregated by catgory_id. Data(CS
 <b>AWS CLI</b><br>
 The AWS Command Line Interface (AWS CLI) is a unified tool to manage your AWS services. 
 
-<b>S3</b>
+<b>S3</b><br>
 Amazon S3 is object storage built to store and retrieve any amount of data from anywhere.
 
-<b>AWS Lambda</b>
+<b>AWS Lambda</b><br>
 AWS Lambda is a serverless, event-driven compute service that lets you run code for virtually any type of application or backend service.
 
-<b>CloudWatch</b>
+<b>CloudWatch</b><br>
 Amazon CloudWatch collects and visualizes real-time logs, metrics, and event data in automated dashboards to streamline your infrastructure and application maintenance.
 
-<b>Glue Crawler</b>
+<b>Glue Crawler</b><br>
 A crawler is a job defined in Amazon Glue. It crawls through databases and buckets in S3 and then creates tables in Amazon Glue together with their schema. Then, you can perform your data operations in Glue, like ETL.
 
-<b>Amazon Athena</b>
+<b>Amazon Athena</b><br>
 Amazon Athena enables users to analyze data in Amazon S3 using Structured Query Language (SQL).
 
-<b>Quicksight</b>
+<b>Quicksight</b><br>
 Amazon QuickSight is a cloud-scale business intelligence (BI) service that you can use to deliver easy-to-understand insights to people, wherever they are.
 
 
