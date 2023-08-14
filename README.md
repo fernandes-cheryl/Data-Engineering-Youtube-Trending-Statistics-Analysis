@@ -23,7 +23,7 @@ Each region’s data is in separate json files segregated by catgory_id. Data(CS
 
 
 ## Services Utilized
-<b>AWS CLI</b>
+<b>AWS CLI</b><br>
 The AWS Command Line Interface (AWS CLI) is a unified tool to manage your AWS services. 
 
 <b>S3</b>
